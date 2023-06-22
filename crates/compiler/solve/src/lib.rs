@@ -10,11 +10,12 @@ pub mod solve;
 pub mod specialize;
 
 mod aliases;
-pub use aliases::Aliases;
 mod deep_copy;
 mod pools;
-pub use pools::Pools;
 mod to_var;
 
 mod kinds;
+
+pub use aliases::Aliases;
 pub use kinds::FunctionKind;
+pub use pools::Pools;
