@@ -11,11 +11,13 @@ pub mod specialize;
 
 mod aliases;
 mod deep_copy;
+mod env;
 mod pools;
 mod to_var;
 
 mod kinds;
 
 pub use aliases::Aliases;
+pub use env::{DerivedEnv, Env};
 pub use kinds::FunctionKind;
 pub use pools::Pools;
