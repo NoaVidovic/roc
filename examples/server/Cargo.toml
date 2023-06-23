@@ -1,0 +1,11 @@
+[package]
+name = "roc_http_server"
+version = "0.1.0"
+authors = ["Richard Feldman <oss@rtfeldman.com>"]
+edition = "2018"
+
+[dependencies]
+hyper = { version = "0.14", features= ["http1", "http2", "client", "server", "runtime", "backports", "deprecated"] }
+tokio = { version = "1", features = ["rt", "rt-multi-thread", "macros"] }
+futures = "0.3"
+bytes = "1.0"
